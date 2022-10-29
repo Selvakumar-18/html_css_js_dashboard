@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaatru</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="split">
+        <div class="left">
+            <div class="nav">
+              <span class="material-icons">
+                add_box
+              </span>
+              
+              <span class="material-icons">
+                more_horiz
+              </span>
+              <div class="toggle">
+                <p><span>&#176;c</span></p>
+                  <span class="material-icons">
+                    toggle_off 
+                  </span>
+                <p><span>&#176;f</span></p>
+              </div>
+            </div>
+
+            <div class="main">
+              <div class="main_name">
+                <span class="material-icons">
+                  keyboard_double_arrow_up
+                </span>
+                <label>New York,USA</label>
+              </div>
+
+              <div class="main_timer">
+                  <span class="material-icons">
+                    watch_later
+                  </span>
+                  <label>07:19</label>
+              </div>
+            </div>
+
+            <div class="main_1">
+              <div class="main_1_name">
+                <label>Today 28 Sept</label>
+              </div>
+              <div class="main_timer">
+                <span class="material-icons">
+                  watch_later
+                </span>
+                <label>19:32</label>
+              </div>
+            </div>
+
+            <div class="deg">
+              <span class="material-icons">
+                keyboard_arrow_left
+                </span>
+              <h2>27<span>&#176;</span></h2>
+              <span class="material-icons">
+                keyboard_arrow_right
+                </span>
+            </div>
+
+            <div class="sun"> 
+              <span class="material-icons">
+                wb_sunny
+              </span> 
+              <p>Sunny</p>
+            </div>
+
+            <div class="img_section">
+              <img src="images/bg.png">
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="content">
+                <label>Welcome Back Iabella!</label> 
+                <div class="dot">
+                  <span>&#8230;</span>
+                  <img src="https://img.freepik.com/free-photo/indian-man-smiling-cheerful-expression-closeup-portrait_53876-129387.jpg?size=626&ext=jpg&ga=GA1.2.1565479137.1666963957" alt="img" width="40" height="40">
+                </div>
+            </div>
+            <div class="content_check">
+              <label>Check out Today Weather Report</label>
+            </div> 
+          
+         
+            <div class="content1">
+              <div class="upcoming">
+                <label>Upcoming Hours</label>
+                <select name="cars" id="cars" disabled>
+                  <option value="Rain Preciptation">Rain Preciptation</option>
+                 
+                </select>
+                <button>Next days></button>
+            </div class="chart">
+               
+                <canvas id="myChart" style="width:400px;height:100px;margin-top: 15px"></canvas>
+            </div>
+
+
+            <div class="more">
+              <label>More details of Today's Weather Report</label>
+            </div>
+
+            <div class="content2">
+             
+
+                <div class="card1">
+                  <div class="card1_content">
+                    <label>Upcoming Hours</label>
+                    <span class="material-icons">
+                      dew_point
+                    </span>
+                  </div>
+                  <div class="card1_text">
+                    <h2>82%</h2>
+                    <small>bad</small>
+                  </div>
+
+                  <div class="card1_progress">
+                    <div class="skill">
+                      <p>good</p>
+                      <div class="skill-bar skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>normal</p>
+                      <div class="skill-bar skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>bad</p>
+                      <div class="skill-bar skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card1">
+                  <div class="card1_content">
+                    <label>Wind</label>
+                    <span class="material-icons">
+                      air
+                    </span>
+                  </div>
+                  
+                  
+                  <div class="rotated-half-circle">
+                   
+                  </div>
+                  <div class="card1_text_1">
+                    <h2>8 km/h</h2>
+                  </div>
+                 
+                </div>
+<!-- Preciptation -->
+                <div class="card1">
+                  <div class="card1_content">
+                  <label>Preciptation</label>
+                  <span class="material-icons">
+                    umbrella
+                    </span>
+                  </div>
+                  <div class="card1_text">
+                    <h2>1.4 cm</h2>
+                  </div>
+                  <div class="card1_progress">
+                    <div class="skill">
+                      <p>0</p>
+                      <div class="skill-bar_3 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>10</p>
+                      <div class="skill-bar_3 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>20</p>
+                      <div class="skill-bar skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>30</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>40</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>50</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>60</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>70</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>80</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>90</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- UV index -->
+                <div class="card1">
+                  <div class="card1_content">
+                  <label>UV index</label>
+                  <span class="material-icons">
+                    light_mode
+                    </span>
+                  </div>
+                  <div class="card1_text">
+                    <h2>4</h2>
+                    <small>medium</small>
+                  </div>
+                  <div class="card1_progress">
+                    <div class="skill">
+                      <p>0-2</p>
+                      <div class="skill-bar_3 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>3-5</p>
+                      <div class="skill-bar skill1">
+                          <span class="skill-count;1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>6-7</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>8-10</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <p>11+</p>
+                      <div class="skill-bar_4 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- Feels like -->
+                <div class="card1">
+                  <div class="card1_content">
+                    <label>Feels like</label>
+                    <span class="material-icons">
+                      thermostat
+                    </span>
+                  </div>
+                  <div class="card1_text">
+                    <h2>30<span>&#176;</span></h2>
+                  </div>
+                  
+                  <div class="skill_bar">
+                    <div class="skill_1">
+                      <p>0<span>&#176;</span>
+                      <p>25<span>&#176;</span>
+                      <p>30<span>&#176;</span>
+                    </div>
+                    <div class="skill">
+                      
+                      <div class="skill-bar_1 skill1">
+                          <span class="skill-count1"></span>
+                      </div>
+                    </div>
+                  </div>   
+                </div>
+
+              <div class="card1">
+                <div class="card1_content">
+                  <label>Chance of rain</label>
+                  <span class="material-icons">
+                    water_drop
+                    </span>
+                </div>
+                <div class="card1_text">
+                  <h2>42%</h2>
+                </div>
+                
+                <div class="skill_bar">
+                  <div class="skill_1">
+                    <p>0</p>
+                    <p>25%</p>
+                    <p>50%</p>
+                    <p>75%</p>
+                    <p>100%</p>
+                  </div>
+                  <div class="skill">
+                    
+                    <div class="skill-bar_1 skill1">
+                        <span class="skill-count1"></span>
+                    </div> 
+                  </div>
+                </div> 
+              </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+
+    
+     <script>
+      var xValues = [100,200,300,400,500,600,700,800,900,1000];
+      
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [{ 
+            data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+            borderColor: "red",
+            fill: false
+          }, { 
+            data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+            borderColor: "green",
+            fill: false
+          }, { 
+            data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+            borderColor: "blue",
+            fill: false
+          }]
+        },
+        options: {
+          legend: {display: false}
+        }
+      });
+      </script>

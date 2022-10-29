@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+@font-face 
+{
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    background-color: #5c9ce5;
+    border-radius: 5px;
+    color: white;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  
+.left{
+    float: left;
+    width: 28%;
+    background-color: #5c9ce5;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+ 
+.right{
+    float: right; 
+    width: 75% ;
+    background-color: #e4f1ff;
+    border-radius: 50px 0 0 50px;
+    height: 100vh;  
+   
+}
+
+.content{
+    /* padding-left: 50px; */
+    /* padding-top: 30px;
+    padding-right: 20px; */
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content img{
+    border-radius: 10px;
+   
+}
+.content_check{
+    margin-left: 50px;
+    display: block;
+    margin-top: -15px;
+}
+.upcoming{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-right: 50px;
+
+}
+.upcoming label{
+    display: block;
+}
+.upcoming button{
+    background-color: #F1F1F1;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+}
+.upcoming select{
+    background-color: #F1F1F1;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+    
+}
+.content1{
+    margin-right: 150px;
+    padding-left: 50px;
+    margin-left: 50px;
+    padding-right: 20px;
+    margin-top: 50px;
+    height: 350px;
+    margin-bottom: 10px;
+    width: 85%;
+    background-color: cornsilk;
+    border-radius: 25px;
+   
+}
+
+#myChart{
+display: block;
+padding-bottom: 20px;
+}
+.more label{
+    display: block;
+    padding-left: 55px;
+    margin-top: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.content2{
+    padding-left: 50px;
+    margin-left: 5px;
+    padding-right: 20px;
+    height: 350px;
+    margin-bottom: 15px;
+    width: 85%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-row-gap: 10px;
+    grid-column-gap: 170px;
+}
+
+.card1{
+   
+    margin-top: 30px;
+    display: block;
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.card1_content{
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+.card1_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+small{
+    display: block;
+    margin-left: 10px;
+}
+
+.card1_progress{
+   
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+
+}
+
+.skill {
+   
+    position: relative;
+    overflow-x:hidden;
+}
+ 
+.skill > p {
+    font-size: 15px;
+    color: #1a1716;
+   
+}
+ 
+ 
+.skill-bar {
+    width: 70%;
+    height: 5px;
+    background:#5c9ce5;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+
+.skill:before {
+    width: 100%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+    border-radius: 4px;
+}
+
+    .skill-bar_0{
+    width: 100%;
+    height: 5px;
+    background:#5c9ce5;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+.skill-bar_1{
+    width: 70%;
+    height: 5px;
+    background:#5c9ce5;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+
+.skill_1
+{
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+} 
+.skill-bar_3{
+    width: 100%;
+    height: 5px;
+    background:#5c9ce5;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+.skill_bar{
+    margin-top: 10px;
+    margin-right: 22px;
+    margin-left: 22px;
+}
+.rotated-half-circle 
+{
+    /* Create the circle */
+    width: 100px;
+    height: 100px;
+    color:#959595;
+    border: 5px solid #5c9ce5;
+    border-radius: 50%;
+    margin-left: 100px;
+    /* Halve the circle */
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    /* Rotate the circle */
+    transform: rotate(-45deg);
+}
+.card1_text_1
+{
+    margin-top: -73px;
+    margin-left: 120px;
+}
+
+.nav{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+}
+.toggle{
+    display: flex;
+    color:white;
+}
+
+.main{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+
+}
+.main_name{
+    display: flex;
+}
+.main_name label{
+    font-size: 20px;
+    font-weight: 800;
+}
+.main_timer label{
+    margin-left: 5px;
+    
+}
+.main_timer{
+    display: flex;
+}
+
+.main_1{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+
+}
+
+.main_1_name {
+    font-size: 15px;
+    
+}
+
+.deg{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+
+.deg h2{
+    margin-top: -50px;
+    font-size:100px;
+}
+
+.sun{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 25px;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+}
+
+.img_section{
+    margin-top: 70px;
+
+}
+.img_section img{
+  
+    margin-right: 350px;
+}
+
+.dot span{
+   font-weight: 900;
+   font-size: 25px;
+   position: relative;
+   top:-17px;
+   left:-10px
+}
